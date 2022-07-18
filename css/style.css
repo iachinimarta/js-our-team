@@ -9,6 +9,10 @@ html {
 }
 
 main {
+    background-color: #F5F5F1;
+}
+
+.container {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -18,16 +22,27 @@ p {
     margin: 30px 0;
 }
 
-.container {
+.cards-container {
     display: flex;
     flex-wrap: wrap;
 }
 
 .card {
     width: calc(100% / 3);
-    padding: 30px;
+    border: 10px solid #F5F5F1;
+    background-color: white;
 }
 
 .card-img {
     width: 100%;
+}
+
+.card-name {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.card-role {
+    padding-bottom: 10px;
+    font-size: 13px;
 }

@@ -51,7 +51,7 @@ for (let i = 0; i < team.length; i++) {
 
     imageSrc = team[i].immagine;
 
-    cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + names + "<br>" + roles;
+    cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + `<div class="card-name">${names}</div>` + `<div class="card-role">${roles}</div>`;
 
 }
 
