@@ -40,16 +40,19 @@ const team = [
 
 let cards = document.querySelectorAll(".card");
 
-let names = [];
-let roles = [];
-let imageSrc = [];
+let names;
+let roles;
+let imageSrc;
 
 for (let i = 0; i < team.length; i++) {
     names = team[i].nome;
+    console.log(names);
 
     roles = team[i].ruolo;
+    console.log(roles);
 
     imageSrc = team[i].immagine;
+    console.log(imageSrc);
 
     cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + `<div class="card-name">${names}</div>` + `<div class="card-role">${roles}</div>`;
 
