@@ -15,7 +15,7 @@ const team = [
     {
         "nome": "Walter Gordon",
         "ruolo": "Office Manager",
-        "imamgine": "walter-gordon-office-manager.jpg"
+        "immagine": "walter-gordon-office-manager.jpg"
     },
 
     {
@@ -37,3 +37,21 @@ const team = [
     }
 
 ];
+
+let cards = document.querySelectorAll(".card");
+
+let names = [];
+let roles = [];
+let imageSrc = [];
+
+for (let i = 0; i < team.length; i++) {
+    names = team[i].nome;
+
+    roles = team[i].ruolo;
+
+    imageSrc = team[i].immagine;
+
+    cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + names + "<br>" + roles;
+
+}
+
