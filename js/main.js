@@ -57,6 +57,6 @@ for (let i = 0; i < team.length; i++) {
     console.log(imageSrc);
 
     //Stampo in html i dati del team e la foto
-    cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + `<div class="card-name">${names}</div>` + `<div class="card-role">${roles}</div>`;
+    cards[i].innerHTML =  `<img class="card-img" src="img/${imageSrc}">` + `<h2 class="card-name">${names}</h2>` + `<h3 class="card-role">${roles}</h3>`;
 
 }
